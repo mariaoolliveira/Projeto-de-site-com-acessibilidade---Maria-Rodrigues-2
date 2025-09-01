@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+  --azul-escuro: #0c349e; /* Cor principal para destacar */
+  --laranja: #ff783a; /* Cor laranja para botões e links */
+  --bg-form: #f8f9fa; /* Cor de fundo para o formulário */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #fff;
+  padding: 1.5rem 0;
+}
+
+.nav-link {
+  color: var(--laranja);
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--azul-escuro); /* Cor de hover */
+}
+
+.section-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+h1, h2 {
+  color: var(--azul-escuro);
+  font-family: 'Lemon', serif; /* Fontes customizadas */
+}
+
+.display-4 {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  color: var(--azul-escuro);
+}
+
+.botao-inicio,
+button[type="submit"] {
+  background-color: var(--azul-escuro);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.botao-inicio:hover,
+button[type="submit"]:hover {
+  background-color: var(--laranja); /* Cor do botão ao passar o mouse */
+}
+
+.fundo-galeria {
+  background-color: #faf4f4;
+}
+
+.formulario {
+  background-color: var(--bg-form);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+  font-weight: bold;
+}
+
+.form-control {
+  background-color: #F1EDEF;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+}
+
+.form-control:focus {
+  border-color: var(--azul-escuro);
+  box-shadow: 0 0 0 0.25rem rgba(12, 52, 158, 0.25);
+}
+
+.menu-acessibilidade {
+  position: fixed;
+  top: 2rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.rotacao-botao {
+  transform: rotate(-90deg);
+  transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+  display: none;
+  margin-top: 0.5rem;
+  flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+  margin-bottom: 0.5rem;
+  background-color: var(--azul-escuro);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.apresenta-lista {
+  display: flex;
+}
+
+footer {
+  background-color: var(--azul-escuro);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  font-style: italic;
+}
+
+footer i {
+  color: white;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+footer i:hover {
+  color: var(--laranja);
+}
+
+footer p {
+  margin-top: 1rem;
+}
